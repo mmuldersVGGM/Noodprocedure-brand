@@ -1,4 +1,4 @@
-# Zelfstudie Noodprocedure Brandweer - versie 3
+# Zelfstudie Noodprocedure Brandweer - versie 3.1
 
 Deze versie is herschikt om verwarring te voorkomen.
 
@@ -31,3 +31,7 @@ Deze versie is herschikt om verwarring te voorkomen.
 - Nieuwe voorlopige ARO-kaart 2026.
 - Landelijke Noodprocedure Brand 2026.
 - Oude ARO-kaart 2021 (alleen ter vergelijking).
+
+
+## Versie-aanduiding
+Versie 3.1 is nu zichtbaar in de bovenbalk, op het startscherm en onderaan de webapp.
