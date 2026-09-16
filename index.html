@@ -12,7 +12,7 @@
       <div class="brandmark">NPB</div>
       <div>
         <div class="eyebrow">Zelfstudie 2026</div>
-        <div class="title-row"><h1>Noodprocedure Brandweer</h1><span class="version-badge">Versie 3.1</span></div>
+        <div class="title-row"><h1>Noodprocedure Brandweer</h1><span class="version-badge">Versie 3.3</span></div>
       </div>
     </div>
     <button id="resetProgress" class="ghost-btn">Voortgang wissen</button>
@@ -49,7 +49,7 @@
     <main class="content">
       <section id="start" class="page active">
         <div class="hero">
-          <div class="hero-kicker">November / december 2026 · Webapp versie 3.1</div>
+          <div class="hero-kicker">November / december 2026 · Webapp versie 3.3</div>
           <h2>Nieuwe noodprocedure: dezelfde bedoeling, duidelijker handelen</h2>
           <p class="lead">
             In 2027 trainen we praktisch met Brandweerman in nood. Deze zelfstudie bereidt daarop voor.
@@ -357,18 +357,24 @@
           <div><div class="eyebrow">Nieuwe ARO-kaart</div><h2>Taken en verantwoordelijkheden</h2></div>
         </div>
 
+        
         <div class="role-tabs">
           <button class="role-tab active" data-role="manschap">Manschappen</button>
           <button class="role-tab" data-role="bevelvoerder">Betrokken bevelvoerder</button>
-          <button class="role-tab" data-role="ovd">Coördinatie</button>
+          <button class="role-tab" data-role="chauffeur">Chauffeur / pompbediende</button>
+          <button class="role-tab" data-role="ovd1">1e OvD</button>
+          <button class="role-tab" data-role="ovd2">2e OvD</button>
+          <button class="role-tab" data-role="hovd">HOvD-TC</button>
           <button class="role-tab" data-role="hinhon">HIN/HON</button>
+          <button class="role-tab" data-role="oefenleider">Oefenleider</button>
         </div>
 
         <div class="role-panel active" id="role-manschap">
           <div class="source-badge regional">Nieuwe ARO-kaart</div>
           <ul>
             <li>Voer indien dit veilig kan een reddingsactie uit onder leiding van de bevelvoerder.</li>
-            <li>Manschappen in de buurt die veilig kunnen helpen, kunnen/mogen direct actie ondernemen.</li>
+            <li>Manschappen die in de buurt zijn en veilig kunnen helpen om de noodsituatie op te heffen kunnen/mogen direct actie ondernemen.</li>
+            <li>Zij luisteren eerst naar de MAYDAY en ondernemen daarna actie. Daarna communiceren zij met de bevelvoerder over de actie.</li>
             <li>Houd rekening met snelle aflossing in verband met fysieke en mentale inspanning.</li>
             <li>Houd de gespreksgroep zoveel mogelijk vrij: alleen noodzakelijke communicatie.</li>
           </ul>
@@ -379,19 +385,42 @@
           <ul>
             <li>Geeft een MAYDAY af naar de meldkamer.</li>
             <li>Start bij ontvangst van de MAYDAY de noodprocedure via urgente spraakaanvraag (9).</li>
+            <li>Begin het bericht altijd met MAYDAY, MAYDAY, MAYDAY.</li>
             <li>Geeft leiding aan de eerste reddingsactie.</li>
-            <li>Tot komst van de OvD neemt de BV de coördinatie op zich. Bij BV in nood is dat de chauffeur/pompbediende.</li>
+            <li>Tot komst van de OvD neemt de bevelvoerder de coördinatie op zich.</li>
           </ul>
         </div>
 
-        <div class="role-panel" id="role-ovd">
+        <div class="role-panel" id="role-chauffeur">
           <div class="source-badge regional">Nieuwe ARO-kaart</div>
           <ul>
-            <li>BV neemt tot komst OvD de coördinatie op zich.</li>
+            <li>Wanneer de bevelvoerder zelf in nood is, neemt de chauffeur/pompbediende de coördinatie op zich.</li>
+            <li>Ondersteunt de opstart van de reddingsactie en de verdere inzetcoördinatie totdat de OvD aanwezig is.</li>
+          </ul>
+        </div>
+
+        <div class="role-panel" id="role-ovd1">
+          <div class="source-badge regional">Nieuwe ARO-kaart</div>
+          <ul>
             <li>1e OvD: leiding over zoekactie / reddingsactie.</li>
+            <li>Neemt na aankomst de coördinatie van de reddingsoperatie over van de bevelvoerder.</li>
+          </ul>
+        </div>
+
+        <div class="role-panel" id="role-ovd2">
+          <div class="source-badge regional">Nieuwe ARO-kaart</div>
+          <ul>
             <li>2e OvD: leiding over incidentbestrijding.</li>
+            <li>Draagt zorg voor de voortzetting en beheersing van het oorspronkelijke incident.</li>
+          </ul>
+        </div>
+
+        <div class="role-panel" id="role-hovd">
+          <div class="source-badge regional">Nieuwe ARO-kaart</div>
+          <ul>
             <li>HOvD-TC: algemene leiding.</li>
-            <li>(H)OvD organiseert onder andere aflossing, begeleiding en nazorg van het getroffen team.</li>
+            <li>Organiseert onder andere aflossing, begeleiding en nazorg van het getroffen team.</li>
+            <li>Stuurt op de bredere coördinatie van het incident en de nafase.</li>
           </ul>
         </div>
 
@@ -405,12 +434,22 @@
           </ul>
         </div>
 
-        <div class="footer-actions">
+        <div class="role-panel" id="role-oefenleider">
+          <div class="source-badge regional">Nieuwe ARO-kaart</div>
+          <ul>
+            <li>Indien een ongeval tijdens een oefening plaatsvindt, wordt dit direct gemeld bij de oefenleider.</li>
+            <li>De oefenleider waarschuwt de Meldkamer Brandweer.</li>
+            <li>De oefenleider beslist over de verder te nemen stappen ter plaatse.</li>
+            <li>De oefenleider draagt de leiding over aan de OvD als deze ter plaatse is of komt.</li>
+          </ul>
+        </div>
+<div class="footer-actions">
           <button class="secondary-btn prev-btn" data-prev="redding">Vorige</button>
           <button class="primary-btn next-btn complete" data-complete="rollen" data-next="opschaling">Afronden en verder</button>
         </div>
       </section>
 
+      
       <section id="opschaling" class="page">
         <div class="section-head">
           <span class="section-number">09</span>
@@ -423,13 +462,63 @@
           <p>OvD/HOvD-TC schaalt, indien noodzakelijk, verder op met extra basiseenheden of specialismen.</p>
         </div>
 
-        <div class="response-grid">
-          <div class="response-card"><strong>3 × TS-6</strong><span>Minimaal extra bij Brand.</span></div>
-          <div class="response-card"><strong>1 × RV</strong><span>Nieuw standaard onderdeel bij Brand.</span></div>
-          <div class="response-card"><strong>2 × OvD-B</strong><span>Redding en incidentbestrijding kunnen gescheiden worden aangestuurd.</span></div>
-          <div class="response-card"><strong>1 × HOvD-TC</strong><span>Algemene leiding.</span></div>
-          <div class="response-card"><strong>1 × HIN/HON</strong><span>Coördinatie processen buiten incidentbestrijding.</span></div>
-          <div class="response-card"><strong>2 × AMBU</strong><span>Medische ondersteuning.</span></div>
+        <div class="opscale-section">
+          <div class="opscale-heading">
+            <span class="opscale-label">BRAND</span>
+            <h3>Brand</h3>
+          </div>
+          <div class="response-grid">
+            <div class="response-card"><strong>3 × TS-6</strong><span>Minimaal extra.</span></div>
+            <div class="response-card"><strong>1 × RV</strong><span>Minimaal extra.</span></div>
+            <div class="response-card"><strong>2 × OvD-B</strong><span>Minimaal extra.</span></div>
+            <div class="response-card"><strong>1 × HOvD-TC</strong><span>Minimaal extra.</span></div>
+            <div class="response-card"><strong>1 × HIN/HON</strong><span>Minimaal extra.</span></div>
+            <div class="response-card"><strong>2 × AMBU</strong><span>Minimaal extra.</span></div>
+          </div>
+        </div>
+
+        <div class="opscale-section">
+          <div class="opscale-heading">
+            <span class="opscale-label">DUIKINZET</span>
+            <h3>Duikinzet</h3>
+          </div>
+          <div class="response-grid">
+            <div class="response-card"><strong>1 × TS-6</strong><span>Minimaal extra.</span></div>
+            <div class="response-card"><strong>2 × OvD-B</strong><span>Minimaal extra.</span></div>
+            <div class="response-card"><strong>1 × HOvD-TC</strong><span>Minimaal extra.</span></div>
+            <div class="response-card"><strong>2 × WO</strong><span>Minimaal extra.</span></div>
+            <div class="response-card"><strong>2 × BRV</strong><span>Minimaal extra.</span></div>
+            <div class="response-card"><strong>2 × AMBU</strong><span>Minimaal extra.</span></div>
+          </div>
+        </div>
+
+        <div class="opscale-section">
+          <div class="opscale-heading">
+            <span class="opscale-label">BRANDWEERVAARTUIG</span>
+            <h3>Brandweervaartuig</h3>
+          </div>
+          <div class="response-grid">
+            <div class="response-card"><strong>1 × TS-6</strong><span>Minimaal extra.</span></div>
+            <div class="response-card"><strong>2 × OvD-B</strong><span>Minimaal extra.</span></div>
+            <div class="response-card"><strong>1 × HOvD-TC</strong><span>Minimaal extra.</span></div>
+            <div class="response-card"><strong>1 × WO</strong><span>Minimaal extra.</span></div>
+            <div class="response-card"><strong>2 × BRV</strong><span>Minimaal extra.</span></div>
+            <div class="response-card"><strong>2 × AMBU</strong><span>Minimaal extra.</span></div>
+          </div>
+        </div>
+
+        <div class="opscale-section">
+          <div class="opscale-heading">
+            <span class="opscale-label">IBGS</span>
+            <h3>IBGS</h3>
+          </div>
+          <div class="response-grid">
+            <div class="response-card"><strong>2 × TS-6</strong><span>Minimaal extra.</span></div>
+            <div class="response-card"><strong>2 × OvD-B</strong><span>Minimaal extra.</span></div>
+            <div class="response-card"><strong>1 × HOvD-TC</strong><span>Minimaal extra.</span></div>
+            <div class="response-card"><strong>1 × AGS</strong><span>Minimaal extra.</span></div>
+            <div class="response-card"><strong>2 × AMBU</strong><span>Minimaal extra.</span></div>
+          </div>
         </div>
 
         <div class="compare-mini">
@@ -480,11 +569,11 @@
           </div>
         </div>
 
-        <details class="legacy-box">
-          <summary>Alleen ter vergelijking: oude ARO-kaart 2021</summary>
-          <p>De oude kaart is niet de werkwijze die in deze zelfstudie wordt aangeleerd. Hij is alleen beschikbaar om de veranderingen terug te kunnen zien.</p>
-          <a class="source-link secondary" href="assets/ARO-Noodprocedure-Brandweer-2021.pdf" target="_blank">Open oude ARO-kaart 2021</a>
-        </details>
+        <div class="legacy-box open">
+          <h3>Ter vergelijking: oude ARO-kaart 2021</h3>
+          <p>De oude kaart is niet de werkwijze die in deze zelfstudie wordt aangeleerd. Hij staat hier alleen om de veranderingen terug te kunnen zien.</p>
+          <a class="source-link secondary visible-link" href="assets/ARO-Noodprocedure-Brandweer-2021.pdf" target="_blank">Open oude ARO-kaart 2021</a>
+        </div>
 
         <div class="footer-actions">
           <button class="secondary-btn prev-btn" data-prev="opschaling">Vorige</button>
@@ -558,7 +647,7 @@
     </main>
   </div>
 
-  <footer class="app-footer">Noodprocedure Brandweer · Zelfstudie 2026 · Webapp versie 3.1</footer>
+  <footer class="app-footer">Noodprocedure Brandweer · Zelfstudie 2026 · Webapp versie 3.3</footer>
 
   <script src="app.js"></script>
 </body>

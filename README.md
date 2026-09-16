@@ -1,4 +1,4 @@
-# Zelfstudie Noodprocedure Brandweer - versie 3.1
+# Zelfstudie Noodprocedure Brandweer - versie 3.3
 
 Deze versie is herschikt om verwarring te voorkomen.
 
@@ -34,4 +34,17 @@ Deze versie is herschikt om verwarring te voorkomen.
 
 
 ## Versie-aanduiding
-Versie 3.1 is nu zichtbaar in de bovenbalk, op het startscherm en onderaan de webapp.
+Versie 3.3 is nu zichtbaar in de bovenbalk, op het startscherm en onderaan de webapp.
+
+
+## Versie 3.3 verbeteringen
+- vergelijking oud/nieuw gefixeerd zodat deze op desktop naast elkaar blijft staan;
+- linkkleur op donkere vlakken aangepast;
+- uitlijning van kaarten met kop en tekst verbeterd;
+- tabs uitgebreid voor alle expliciet genoemde functionarissen in de nieuwe ARO-kaart;
+- vergelijking bij opschaling links/rechts netter uitgelijnd;
+- oude ARO-kaart nu direct klikbaar gemaakt.
+
+
+## Versie 3.3
+Opschaling is nu per incidenttype apart weergegeven: Brand, Duikinzet, Brandweervaartuig en IBGS, conform de nieuwe ARO-kaart.

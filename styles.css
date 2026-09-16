@@ -232,3 +232,154 @@ button{font:inherit}
 @media(max-width:900px){
   .app-footer{position:static;margin:16px 20px;text-align:center}
 }
+
+
+/* ---- versie 3.2 reparaties ---- */
+.hero .source-link,
+.primary-source-card .source-link,
+.legacy-box .source-link,
+.source-actions .source-link{
+  text-decoration:none !important;
+  color:#fff !important;
+}
+.hero .source-link.light{
+  background:#1f2327 !important;
+  color:#fff !important;
+  border:1px solid #3a4045;
+}
+.legacy-box .source-link.secondary,
+.primary-source-card .source-link.secondary,
+.source-actions .source-link.secondary,
+.visible-link.secondary{
+  color:#222 !important;
+}
+.source-buttons{margin-top:14px}
+.source-buttons .source-link{margin-right:8px}
+
+.safe-card strong,
+.safe-card span,
+.response-card strong,
+.response-card span,
+.pillar strong,
+.pillar span,
+.old-way h3,
+.old-way p,
+.new-way h3,
+.new-way p{
+  display:block;
+}
+.safe-card strong,
+.response-card strong,
+.pillar strong{
+  margin-bottom:6px;
+}
+.safe-card span,
+.response-card span,
+.pillar span{
+  margin-top:2px;
+}
+
+.compare-mini{
+  grid-template-columns:1fr 60px 1fr !important;
+}
+.compare-mini > div:first-child,
+.compare-mini > div:last-child{
+  background:#f7f8f9;
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:14px 16px;
+  min-height:92px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.compare-mini .arrow-change{
+  align-self:center;
+  justify-self:center;
+}
+
+.role-panel ul{
+  margin:0;
+  padding-left:22px;
+}
+.role-panel li{
+  margin:10px 0;
+}
+
+.legacy-box.open{
+  background:#f7f8f9;
+  padding:20px;
+}
+.legacy-box.open h3{
+  margin-top:0;
+}
+.visible-link{
+  display:inline-block;
+  margin-top:8px;
+}
+
+@media (min-width: 761px){
+  .change-row{
+    grid-template-columns:1fr 44px 1fr !important;
+    align-items:stretch;
+  }
+  .arrow-change{
+    transform:none !important;
+  }
+  .compare-mini{
+    grid-template-columns:1fr 60px 1fr !important;
+  }
+}
+
+@media (max-width: 760px){
+  .change-row{
+    grid-template-columns:1fr !important;
+  }
+  .arrow-change{
+    transform:rotate(90deg);
+  }
+  .safe-grid{
+    grid-template-columns:1fr !important;
+  }
+  .compare-mini{
+    grid-template-columns:1fr !important;
+  }
+}
+
+
+/* ---- versie 3.3: opschaling per incidenttype ---- */
+.opscale-section{
+  margin:28px 0 34px;
+}
+.opscale-heading{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:14px;
+  padding-bottom:10px;
+  border-bottom:2px solid #dfe3e7;
+}
+.opscale-heading h3{
+  margin:0;
+  font-size:26px;
+}
+.opscale-label{
+  display:inline-block;
+  background:#17191b;
+  color:#fff;
+  border-radius:999px;
+  padding:6px 10px;
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:.08em;
+}
+.opscale-section .response-card{
+  min-height:105px;
+}
+@media(max-width:900px){
+  .opscale-heading{
+    align-items:flex-start;
+    flex-direction:column;
+    gap:6px;
+  }
+}
