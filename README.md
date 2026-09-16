@@ -1,4 +1,4 @@
-# Zelfstudie Noodprocedure Brandweer - versie 3.5
+# Zelfstudie Noodprocedure Brandweer - versie 3.6
 
 Deze versie is herschikt om verwarring te voorkomen.
 
@@ -34,10 +34,10 @@ Deze versie is herschikt om verwarring te voorkomen.
 
 
 ## Versie-aanduiding
-Versie 3.5 is nu zichtbaar in de bovenbalk, op het startscherm en onderaan de webapp.
+Versie 3.6 is nu zichtbaar in de bovenbalk, op het startscherm en onderaan de webapp.
 
 
-## Versie 3.5 verbeteringen
+## Versie 3.6 verbeteringen
 - vergelijking oud/nieuw gefixeerd zodat deze op desktop naast elkaar blijft staan;
 - linkkleur op donkere vlakken aangepast;
 - uitlijning van kaarten met kop en tekst verbeterd;
@@ -46,11 +46,11 @@ Versie 3.5 is nu zichtbaar in de bovenbalk, op het startscherm en onderaan de we
 - oude ARO-kaart nu direct klikbaar gemaakt.
 
 
-## Versie 3.5
+## Versie 3.6
 Opschaling is nu per incidenttype apart weergegeven: Brand, Duikinzet, Brandweervaartuig en IBGS, conform de nieuwe ARO-kaart.
 
 
-## Versie 3.5
+## Versie 3.6
 - QR-code toegevoegd voor: https://mmuldersvggm.github.io/noodprocedure-brand/
 - Mobiele layout verbeterd voor Android en iPhone/iPad.
 - Safe-area ondersteuning voor iPhones/iPads met notch.
@@ -63,9 +63,17 @@ Opschaling is nu per incidenttype apart weergegeven: Brand, Duikinzet, Brandweer
 Let op: de QR-code wijst naar `https://mmuldersvggm.github.io/noodprocedure-brand/`. Als de definitieve GitHub Pages-URL anders is, moet de QR-code opnieuw gegenereerd worden.
 
 
-## Versie 3.5
+## Versie 3.6
 - Nieuw dramatisch voorblad toegevoegd met de door gebruiker gekozen afbeelding.
 - Videolink toegevoegd aan het voorblad: https://youtu.be/cwMH92jkYbE?si=Lnylt_NI9A3c9vRX
 - Auteur toegevoegd bij versienummer: Michel Mulders.
 - QR-code bijgewerkt naar de correcte live URL: https://mmuldersvggm.github.io/Noodprocedure-brand/
 - Voorblad responsief gemaakt voor desktop, Android, iPhone en iPad.
+
+
+## Versie 3.6
+- Voorblad wordt niet meer afgesneden op desktop.
+- Voorblad gebruikt altijd de volledige 16:9-afbeelding.
+- Knoppen staan niet langer over de afbeelding, maar in een aparte balk eronder.
+- Mobiele weergave opnieuw opgebouwd zodat het voorblad ook zichtbaar is op Android en iPhone/iPad.
+- Versienummer en auteur staan in een aparte nette bovenbalk.

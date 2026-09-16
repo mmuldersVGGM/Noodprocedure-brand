@@ -18,7 +18,7 @@
       <div class="brandmark">NPB</div>
       <div>
         <div class="eyebrow">Zelfstudie 2026</div>
-        <div class="title-row"><h1>Noodprocedure Brandweer</h1><span class="version-badge">Versie 3.5 · Michel Mulders</span></div>
+        <div class="title-row"><h1>Noodprocedure Brandweer</h1><span class="version-badge">Versie 3.6 · Michel Mulders</span></div>
       </div>
     </div>
     <button id="resetProgress" class="ghost-btn">Voortgang wissen</button>
@@ -54,34 +54,37 @@
 
     <main class="content">
       
+      
       <section id="start" class="page active">
-        <div class="cover-hero">
-          <img class="cover-image" src="assets/voorblad-noodprocedure-brandweer.png" alt="Voorblad Zelfstudie Noodprocedure Brandweer">
-
-          <div class="cover-topline">
-            <span>Zelfstudie 2026</span>
-            <span class="cover-version">Versie 3.5 · Michel Mulders</span>
+        <div class="cover-shell">
+          <div class="cover-meta">
+            <span class="cover-meta-left">Zelfstudie Noodprocedure Brandweer</span>
+            <span class="cover-meta-version">Versie 3.6 · Michel Mulders</span>
           </div>
 
-          <div class="cover-actions">
+          <div class="cover-frame">
+            <img
+              class="cover-image"
+              src="assets/voorblad-noodprocedure-brandweer.png"
+              alt="Voorblad Zelfstudie Noodprocedure Brandweer"
+            >
+          </div>
+
+          <div class="cover-actionbar">
             <a class="cover-btn video-btn" href="https://youtu.be/cwMH92jkYbE?si=Lnylt_NI9A3c9vRX" target="_blank" rel="noopener noreferrer">
               Bekijk video
             </a>
             <a class="cover-btn secondary-cover-btn" href="assets/ARO-Noodprocedure-Brandweer-concept-2026.pdf" target="_blank">
               Nieuwe ARO-kaart
             </a>
-            <button class="cover-btn start-cover-btn next-btn" data-next="basis">Start zelfstudie</button>
+            <button class="cover-btn start-cover-btn next-btn" data-next="basis">
+              Start zelfstudie
+            </button>
           </div>
 
-          <div class="cover-mobile-note">
-            <span>Geschikt voor desktop, Android, iPhone en iPad</span>
+          <div class="cover-device-note">
+            Geschikt voor desktop, Android, iPhone en iPad
           </div>
-        </div>
-
-        <div class="mobile-quicklinks">
-          <a href="https://youtu.be/cwMH92jkYbE?si=Lnylt_NI9A3c9vRX" target="_blank" rel="noopener noreferrer">Bekijk video</a>
-          <a href="assets/ARO-Noodprocedure-Brandweer-concept-2026.pdf" target="_blank">Open ARO-kaart</a>
-          <a href="assets/Landelijke-Noodprocedure-Brand-2026.pdf" target="_blank">Landelijke onderlegger</a>
         </div>
 
         <div class="qr-card compact-qr">
@@ -91,7 +94,7 @@
             <p>De QR-code opent de live webapp.</p>
             <div class="qr-url">https://mmuldersvggm.github.io/Noodprocedure-brand/</div>
           </div>
-          <img src="assets/qr-noodprocedure-brand.png" alt="QR-code naar de Noodprocedure Brandweer webapp" />
+          <img src="assets/qr-noodprocedure-brand.png" alt="QR-code naar de Noodprocedure Brandweer webapp">
         </div>
       </section>
 
@@ -683,7 +686,7 @@
     </main>
   </div>
 
-  <footer class="app-footer">Noodprocedure Brandweer · Zelfstudie 2026 · Webapp versie 3.5</footer>
+  <footer class="app-footer">Noodprocedure Brandweer · Zelfstudie 2026 · Webapp versie 3.6</footer>
 
   <script src="app.js"></script>
   <script>if("serviceWorker" in navigator){window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));}</script>
