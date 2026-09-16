@@ -1,6 +1,7 @@
 const sections = [...document.querySelectorAll('.page')];
 const navItems = [...document.querySelectorAll('.nav-item')];
-const completed = new Set(JSON.parse(localStorage.getItem('npb-completed') || '[]'));
+const totalSections = navItems.length;
+const completed = new Set(JSON.parse(localStorage.getItem('npb-completed-v3') || '[]'));
 
 function showSection(id){
   sections.forEach(s => s.classList.toggle('active', s.id === id));
@@ -8,14 +9,14 @@ function showSection(id){
   window.scrollTo({top:0, behavior:'smooth'});
 }
 function saveProgress(){
-  localStorage.setItem('npb-completed', JSON.stringify([...completed]));
+  localStorage.setItem('npb-completed-v3', JSON.stringify([...completed]));
   updateProgress();
 }
 function updateProgress(){
   navItems.forEach(n => n.classList.toggle('done', completed.has(n.dataset.section)));
   const count = completed.size;
-  document.getElementById('progressBar').style.width = `${(count/8)*100}%`;
-  document.getElementById('progressText').textContent = `${count} van 8 onderdelen afgerond`;
+  document.getElementById('progressBar').style.width = `${(count/totalSections)*100}%`;
+  document.getElementById('progressText').textContent = `${count} van ${totalSections} onderdelen afgerond`;
 }
 navItems.forEach(btn => btn.addEventListener('click', () => showSection(btn.dataset.section)));
 document.querySelectorAll('.next-btn').forEach(btn => btn.addEventListener('click', () => showSection(btn.dataset.next)));
@@ -26,7 +27,7 @@ document.querySelectorAll('.complete').forEach(btn => btn.addEventListener('clic
   if(btn.dataset.next) showSection(btn.dataset.next);
 }));
 document.getElementById('resetProgress').addEventListener('click', () => {
-  completed.clear(); localStorage.removeItem('npb-completed'); updateProgress(); showSection('start');
+  completed.clear(); localStorage.removeItem('npb-completed-v3'); updateProgress(); showSection('start');
 });
 document.querySelectorAll('.role-tab').forEach(tab => tab.addEventListener('click', () => {
   document.querySelectorAll('.role-tab').forEach(t => t.classList.remove('active'));
@@ -49,11 +50,11 @@ document.getElementById('checkQuiz').addEventListener('click', () => {
     return;
   }
   if(score === questions.length){
-    out.textContent = `Alles goed: ${score}/${questions.length}. De kern van de procedure is duidelijk.`;
+    out.textContent = `Alles goed: ${score}/${questions.length}. De kern van de nieuwe werkwijze is duidelijk.`;
     out.classList.add('good');
     completed.add('check'); saveProgress();
   } else {
-    out.textContent = `${score}/${questions.length} goed. Bekijk de onderdelen met de verschillen, MAYDAY en handelingsperspectieven nogmaals.`;
+    out.textContent = `${score}/${questions.length} goed. Bekijk vooral het onderdeel ‘Wat verandert voor ons?’ en de onderdelen over MAYDAY en reddingsactie nogmaals.`;
     out.classList.add('bad');
   }
 });

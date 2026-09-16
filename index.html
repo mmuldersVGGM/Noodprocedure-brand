@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zelfstudie Noodprocedure Brand</title>
+  <title>Zelfstudie Noodprocedure Brandweer</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -12,7 +12,7 @@
       <div class="brandmark">NPB</div>
       <div>
         <div class="eyebrow">Zelfstudie 2026</div>
-        <h1>Landelijke Noodprocedure Brand</h1>
+        <h1>Noodprocedure Brandweer</h1>
       </div>
     </div>
     <button id="resetProgress" class="ghost-btn">Voortgang wissen</button>
@@ -23,22 +23,26 @@
       <div class="progress-card">
         <div class="progress-label">Voortgang</div>
         <div class="progress-bar"><span id="progressBar"></span></div>
-        <div id="progressText" class="progress-text">0 van 8 onderdelen afgerond</div>
+        <div id="progressText" class="progress-text">0 van 11 onderdelen afgerond</div>
       </div>
 
       <nav id="nav">
         <button class="nav-item active" data-section="start">1. Start</button>
-        <button class="nav-item" data-section="waarom">2. Waarom landelijk?</button>
-        <button class="nav-item" data-section="gelijk">3. Wat blijft gelijk?</button>
-        <button class="nav-item" data-section="verschillen">4. Wat verandert?</button>
-        <button class="nav-item" data-section="mayday">5. MAYDAY en opstarten</button>
-        <button class="nav-item" data-section="rollen">6. Handelingsperspectieven</button>
-        <button class="nav-item" data-section="inzet">7. Standaard inzetvoorstel</button>
-        <button class="nav-item" data-section="check">8. Kennischeck</button>
+        <button class="nav-item" data-section="basis">2. Basis van de nieuwe werkwijze</button>
+        <button class="nav-item" data-section="verandert">3. Wat verandert voor ons?</button>
+        <button class="nav-item" data-section="blijft">4. Wat blijft hetzelfde?</button>
+        <button class="nav-item" data-section="herkennen">5. Herkennen</button>
+        <button class="nav-item" data-section="mayday">6. Noodoproep MAYDAY</button>
+        <button class="nav-item" data-section="redding">7. Start reddingsactie</button>
+        <button class="nav-item" data-section="rollen">8. Taken en verantwoordelijkheden</button>
+        <button class="nav-item" data-section="opschaling">9. Opschaling</button>
+        <button class="nav-item" data-section="aro">10. Nieuwe ARO-kaart</button>
+        <button class="nav-item" data-section="check">11. Kennischeck</button>
       </nav>
 
       <div class="source-note">
-        Inhoud gebaseerd op de landelijke Noodprocedure Brand (2026) en de huidige regionale aandachtskaart Noodprocedure Brandweer.
+        Deze zelfstudie gebruikt de nieuwe voorlopige ARO-aandachtskaart als operationele vertaling.
+        De landelijke Noodprocedure Brand is de inhoudelijke onderlegger.
       </div>
     </aside>
 
@@ -46,384 +50,492 @@
       <section id="start" class="page active">
         <div class="hero">
           <div class="hero-kicker">November / december 2026</div>
-          <h2>Van regionale werkwijze naar één landelijke noodprocedure</h2>
+          <h2>Nieuwe noodprocedure: dezelfde bedoeling, duidelijker handelen</h2>
           <p class="lead">
-            Deze zelfstudie bereidt manschappen, bevelvoerders en operationeel leidinggevenden voor op de
-            Landelijke Noodprocedure Brand. De nadruk ligt op de taal, de eerste handelingen en de taakverdeling.
+            In 2027 trainen we praktisch met Brandweerman in nood. Deze zelfstudie bereidt daarop voor.
+            De nadruk ligt op wat er voor onze ploegen en bevelvoerders verandert ten opzichte van de oude ARO-kaart.
           </p>
+
           <div class="hero-grid">
-            <div class="metric">
-              <strong>15–20 min</strong>
-              <span>zelfstudie</span>
-            </div>
-            <div class="metric">
-              <strong>2027</strong>
-              <span>praktijktraining Brandweerman in nood</span>
-            </div>
-            <div class="metric">
-              <strong>1 doel</strong>
-              <span>snel een reddingsactie mogelijk maken én volhouden</span>
-            </div>
+            <div class="metric"><strong>20–25 min</strong><span>zelfstudie</span></div>
+            <div class="metric"><strong>MAYDAY</strong><span>vaste noodoproep</span></div>
+            <div class="metric"><strong>2027</strong><span>praktijktraining</span></div>
           </div>
-          <button class="primary-btn next-btn" data-next="waarom">Start zelfstudie</button>
+
+          <div class="start-message">
+            <strong>Belangrijk:</strong>
+            in deze app gebruiken we één lijn. De nieuwe ARO-kaart is de regionale werkwijze.
+            De oude kaart wordt alleen gebruikt om de veranderingen zichtbaar te maken.
+          </div>
+
+          <div class="source-buttons">
+            <a class="source-link light" href="assets/ARO-Noodprocedure-Brandweer-concept-2026.pdf" target="_blank">Open nieuwe ARO-kaart</a>
+            <a class="source-link light" href="assets/Landelijke-Noodprocedure-Brand-2026.pdf" target="_blank">Open landelijke onderlegger</a>
+          </div>
+
+          <button class="primary-btn next-btn" data-next="basis">Start zelfstudie</button>
         </div>
       </section>
 
-      <section id="waarom" class="page">
+      <section id="basis" class="page">
         <div class="section-head">
           <span class="section-number">02</span>
-          <div>
-            <div class="eyebrow">Waarom landelijk?</div>
-            <h2>Eén taal, één basisprocedure</h2>
+          <div><div class="eyebrow">Basis</div><h2>Waar gaat de nieuwe werkwijze om?</h2></div>
+        </div>
+
+        <div class="source-badge">Landelijke onderlegger</div>
+        <div class="document-text">
+          <p>De Noodprocedure Brand is bestemd voor in nood verkerend of vermissing van eigen personeel tijdens de bestrijding van een brand.</p>
+          <p>Het doel is snel een levensreddende actie te starten én vol te kunnen houden.</p>
+          <p>Situationeel overzicht, beheersing van het oorspronkelijke incident en snelle back up ter plaatse vormen hierbij de belangrijkste randvoorwaarden.</p>
+        </div>
+
+        <div class="three-pillars">
+          <div class="pillar">
+            <strong>1. Herkennen</strong>
+            <span>Een noodsituatie vroeg herkennen en zonder onnodig tijdverlies melden.</span>
+          </div>
+          <div class="pillar">
+            <strong>2. Handelen</strong>
+            <span>Als dit veilig kan direct een reddingsactie starten.</span>
+          </div>
+          <div class="pillar">
+            <strong>3. Volhouden</strong>
+            <span>Voldoende slagkracht, leiding en ondersteuning organiseren.</span>
           </div>
         </div>
 
-        <div class="quote-card">
-          <p>“Een noodprocedure standaardiseert handelingen tijdens een noodsituatie.”</p>
-        </div>
-
-        <div class="cards two">
-          <article class="card">
-            <h3>Doel</h3>
-            <p>
-              De Noodprocedure Brand is bedoeld voor in nood verkerend of vermissing van eigen personeel
-              tijdens de bestrijding van een brand.
-            </p>
-          </article>
-          <article class="card">
-            <h3>Beoogd effect</h3>
-            <p>
-              Snel een levensreddende actie starten én vol kunnen houden, met situationeel overzicht,
-              beheersing van het oorspronkelijke incident en snelle back-up ter plaatse.
-            </p>
-          </article>
-        </div>
-
         <div class="callout">
-          <strong>Belangrijk bij implementatie:</strong>
-          de landelijke procedure is bedoeld als robuust vangnet. Landelijke eenduidigheid weegt zwaarder dan regionaal maatwerk.
+          <strong>De bedoeling is niet veranderd:</strong>
+          een collega zo snel en veilig mogelijk helpen. Wat verandert, is de manier waarop we dat eenduidig organiseren.
         </div>
 
         <div class="footer-actions">
           <button class="secondary-btn prev-btn" data-prev="start">Vorige</button>
-          <button class="primary-btn next-btn complete" data-complete="waarom" data-next="gelijk">Afronden en verder</button>
+          <button class="primary-btn next-btn complete" data-complete="basis" data-next="verandert">Afronden en verder</button>
         </div>
       </section>
 
-      <section id="gelijk" class="page">
+      <section id="verandert" class="page">
         <div class="section-head">
           <span class="section-number">03</span>
-          <div>
-            <div class="eyebrow">Overeenkomsten</div>
-            <h2>Wat blijft in de kern gelijk?</h2>
+          <div><div class="eyebrow">Oude ARO-kaart → nieuwe ARO-kaart</div><h2>Wat verandert voor ons?</h2></div>
+        </div>
+
+        <p class="lead compact">
+          Dit zijn de veranderingen die je vooral moet onthouden. De oude kaart staat links ter vergelijking; de nieuwe werkwijze staat rechts.
+        </p>
+
+        <div class="change-grid">
+          <div class="change-row">
+            <div class="old-way">
+              <div class="tag oldtag">OUD</div>
+              <h3>Melding “Noodprocedure Brandweer”</h3>
+              <p>De melding kon door iedere betrokken brandweerfunctionaris worden afgegeven.</p>
+            </div>
+            <div class="arrow-change">→</div>
+            <div class="new-way">
+              <div class="tag newtag">NIEUW</div>
+              <h3>Noodoproep MAYDAY</h3>
+              <p><strong>MAYDAY, MAYDAY, MAYDAY</strong> met <strong>WIE + WAT + WAAR</strong>.</p>
+            </div>
           </div>
+
+          <div class="change-row">
+            <div class="old-way">
+              <div class="tag oldtag">OUD</div>
+              <h3>Eerst terugtrekken</h3>
+              <p>Ander personeel bij de TS tijdelijk terugtrekken en bij het voertuig laten blijven.</p>
+            </div>
+            <div class="arrow-change">→</div>
+            <div class="new-way">
+              <div class="tag newtag">NIEUW</div>
+              <h3>Direct helpen als dat veilig kan</h3>
+              <p>Andere teams in de buurt kunnen direct starten met de reddingsactie. Zij hoeven niet eerst terug naar het voertuig.</p>
+            </div>
+          </div>
+
+          <div class="change-row">
+            <div class="old-way">
+              <div class="tag oldtag">OUD</div>
+              <h3>Redding in overleg met OvD</h3>
+              <p>De kaart koppelde het starten van de redding nadrukkelijk aan overleg met de OvD.</p>
+            </div>
+            <div class="arrow-change">→</div>
+            <div class="new-way">
+              <div class="tag newtag">NIEUW</div>
+              <h3>Sneller starten</h3>
+              <p>Wanneer de bevelvoerder de MAYDAY ontvangt, zet hij/zij de noodprocedure in gang. Nabije teams kunnen, mits veilig, direct handelen.</p>
+            </div>
+          </div>
+
+          <div class="change-row">
+            <div class="old-way">
+              <div class="tag oldtag">OUD</div>
+              <h3>Maximale extra opschaling</h3>
+              <p>Bij algemene brandweerinzet maximaal 2 extra TS, OvD-capaciteit, HOvD en 2 ambulances.</p>
+            </div>
+            <div class="arrow-change">→</div>
+            <div class="new-way">
+              <div class="tag newtag">NIEUW</div>
+              <h3>Minimale extra opschaling</h3>
+              <p>Bij Brand minimaal 3 TS-6, 1 RV, 2 OvD-B, 1 HOvD-TC, 1 HIN/HON en 2 ambulances.</p>
+            </div>
+          </div>
+
+          <div class="change-row">
+            <div class="old-way">
+              <div class="tag oldtag">OUD</div>
+              <h3>Globale rolverdeling</h3>
+              <p>Veel handelingen stonden verspreid over de kaart.</p>
+            </div>
+            <div class="arrow-change">→</div>
+            <div class="new-way">
+              <div class="tag newtag">NIEUW</div>
+              <h3>Duidelijker wie wat doet</h3>
+              <p>Manschappen, betrokken bevelvoerder, (H)OvD en HIN/HON hebben duidelijker benoemde taken.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="memory-card">
+          <strong>Onthoud vooral:</strong>
+          <span>MAYDAY → WIE/WAT/WAAR → bevestigen → procedure starten → direct redden als dit veilig kan.</span>
+        </div>
+
+        <div class="footer-actions">
+          <button class="secondary-btn prev-btn" data-prev="basis">Vorige</button>
+          <button class="primary-btn next-btn complete" data-complete="verandert" data-next="blijft">Afronden en verder</button>
+        </div>
+      </section>
+
+      <section id="blijft" class="page">
+        <div class="section-head">
+          <span class="section-number">04</span>
+          <div><div class="eyebrow">Continuïteit</div><h2>Wat blijft hetzelfde?</h2></div>
         </div>
 
         <div class="stack">
           <div class="same-item">
             <span>01</span>
-            <div>
-              <h3>Veilig optreden blijft leidend</h3>
-              <p>Een reddingsactie mag niet leiden tot nieuwe slachtoffers. Risico-inschatting blijft noodzakelijk.</p>
-            </div>
+            <div><h3>Veiligheid blijft leidend</h3><p>Een reddingsactie moet veilig uitvoerbaar zijn. De eigen veiligheid en die van andere collega's blijft onderdeel van de afweging.</p></div>
           </div>
           <div class="same-item">
             <span>02</span>
-            <div>
-              <h3>Een noodsituatie vraagt directe actie</h3>
-              <p>Alarmeren, beeld vormen, lokaliseren en een reddingsactie voorbereiden of starten blijven kernhandelingen.</p>
-            </div>
+            <div><h3>De bevelvoerder coördineert tot komst van de OvD</h3><p>Bij een bevelvoerder in nood neemt de chauffeur/pompbediener deze rol over.</p></div>
           </div>
           <div class="same-item">
             <span>03</span>
-            <div>
-              <h3>Etherdiscipline blijft essentieel</h3>
-              <p>Communiceer alleen wat voor de noodsituatie, redding en incidentbestrijding noodzakelijk is.</p>
-            </div>
+            <div><h3>1e OvD richt zich op zoek-/reddingsactie</h3><p>De 2e OvD richt zich op de incidentbestrijding. De HOvD-TC heeft de algemene leiding.</p></div>
           </div>
           <div class="same-item">
             <span>04</span>
-            <div>
-              <h3>Het oorspronkelijke incident blijft aandacht vragen</h3>
-              <p>De redding vindt niet los van de brandbestrijding plaats. Stabilisatie kan nodig zijn om een veilige reddingsactie mogelijk te maken.</p>
-            </div>
+            <div><h3>Radiodiscipline blijft essentieel</h3><p>Alleen noodzakelijke communicatie. De gespreksgroep zoveel mogelijk vrijhouden.</p></div>
           </div>
           <div class="same-item">
             <span>05</span>
-            <div>
-              <h3>Opschaling en nazorg blijven onderdeel van de procedure</h3>
-              <p>Extra eenheden, operationele leiding, medische hulp, personeelszorg, onderzoek en evaluatie blijven noodzakelijk.</p>
-            </div>
+            <div><h3>Nazorg en rapportage blijven onderdeel van de procedure</h3><p>Betrokkenen leggen hun eigen waarnemingen vast; incident en noodprocedure worden geëvalueerd.</p></div>
           </div>
         </div>
 
         <div class="footer-actions">
-          <button class="secondary-btn prev-btn" data-prev="waarom">Vorige</button>
-          <button class="primary-btn next-btn complete" data-complete="gelijk" data-next="verschillen">Afronden en verder</button>
+          <button class="secondary-btn prev-btn" data-prev="verandert">Vorige</button>
+          <button class="primary-btn next-btn complete" data-complete="blijft" data-next="herkennen">Afronden en verder</button>
         </div>
       </section>
 
-      <section id="verschillen" class="page">
+      <section id="herkennen" class="page">
         <div class="section-head">
-          <span class="section-number">04</span>
-          <div>
-            <div class="eyebrow">Verschillen</div>
-            <h2>Van huidige regionale kaart naar landelijke procedure</h2>
-          </div>
+          <span class="section-number">05</span>
+          <div><div class="eyebrow">Nieuwe ARO-kaart</div><h2>Herkennen</h2></div>
         </div>
 
-        <div class="compare-grid">
-          <div class="compare-header old">Huidige regionale procedure</div>
-          <div class="compare-header new">Landelijke Noodprocedure Brand</div>
-
-          <div class="compare-cell old">
-            <h3>Melding</h3>
-            <p>“Noodprocedure Brandweer” via urgente spraakaanvraag of noodknop.</p>
-          </div>
-          <div class="compare-cell new">
-            <h3>Alarmkreet</h3>
-            <p><strong>MAYDAY MAYDAY MAYDAY</strong>. De landelijke procedure gebruikt één eenduidige alarmkreet.</p>
-          </div>
-
-          <div class="compare-cell old">
-            <h3>Redding</h3>
-            <p>“Start redding in overleg met OvD.”</p>
-          </div>
-          <div class="compare-cell new">
-            <h3>Eerste reddingsactie</h3>
-            <p>De betrokken bevelvoerder start, als de omstandigheden dit toelaten, zo snel mogelijk een eerste reddingsactie.</p>
-          </div>
-
-          <div class="compare-cell old">
-            <h3>Terugtrekken</h3>
-            <p>Ander personeel bij de TS tijdelijk terugtrekken en bij het voertuig laten blijven.</p>
-          </div>
-          <div class="compare-cell new">
-            <h3>Situationeel handelen</h3>
-            <p>Laat alleen terugtrekken als dit vanwege veiligheid noodzakelijk is.</p>
-          </div>
-
-          <div class="compare-cell old">
-            <h3>Regionale opschaling</h3>
-            <p>Regionale aantallen en functies, afhankelijk van het incidenttype.</p>
-          </div>
-          <div class="compare-cell new">
-            <h3>Landelijke minimumrespons</h3>
-            <p>Een gestandaardiseerd inzetvoorstel met vaste eerste taken voor redding, stabilisatie en coördinatie.</p>
-          </div>
-
-          <div class="compare-cell old">
-            <h3>Brede toepassing</h3>
-            <p>De huidige regionale kaart bevat ook IBGS, duiken en brandweervaartuigen.</p>
-          </div>
-          <div class="compare-cell new">
-            <h3>Scope</h3>
-            <p>De landelijke procedure is vooralsnog gericht op eigen personeel tijdens brandbestrijding.</p>
-          </div>
+        <div class="source-badge regional">Tekst uit nieuwe ARO-kaart</div>
+        <div class="document-text accent">
+          <p>Iedere brandweerfunctionaris mag een noodprocedure opstarten, wanneer hij/zij of een collega hulp nodig heeft, bijvoorbeeld wanneer:</p>
+          <ul>
+            <li>Je het gevoel hebt dat je de weg of oriëntatie kwijt bent.</li>
+            <li>Je ingesloten raakt.</li>
+            <li>Na een instorting je terugweg geblokkeerd is.</li>
+            <li>Ademluchtapparatuur faalt in een risico-omgeving.</li>
+            <li>Je gewond raakt en jezelf of je collega niet in veiligheid kan brengen.</li>
+          </ul>
         </div>
 
-        <div class="warning-card">
-          <strong>Implementatiepunt voor de regio</strong>
-          <p>
-            De landelijke procedure vervangt niet automatisch de bestaande regionale afspraken voor andere repressieve taken.
-            Daarvoor is een apart regionaal besluit nodig.
-          </p>
+        <div class="callout">
+          <strong>Twijfel niet te lang.</strong>
+          De nieuwe werkwijze is juist bedoeld om sneller te herkennen, te melden en te handelen.
         </div>
 
         <div class="footer-actions">
-          <button class="secondary-btn prev-btn" data-prev="gelijk">Vorige</button>
-          <button class="primary-btn next-btn complete" data-complete="verschillen" data-next="mayday">Afronden en verder</button>
+          <button class="secondary-btn prev-btn" data-prev="blijft">Vorige</button>
+          <button class="primary-btn next-btn complete" data-complete="herkennen" data-next="mayday">Afronden en verder</button>
         </div>
       </section>
 
       <section id="mayday" class="page">
         <div class="section-head">
-          <span class="section-number">05</span>
-          <div>
-            <div class="eyebrow">Alarm en opstarten</div>
-            <h2>MAYDAY en de Noodprocedure Brand</h2>
-          </div>
+          <span class="section-number">06</span>
+          <div><div class="eyebrow">Nieuwe ARO-kaart</div><h2>Noodoproep “MAYDAY”</h2></div>
+        </div>
+
+        <div class="source-badge regional">Letterlijke kern uit nieuwe ARO-kaart</div>
+        <div class="document-text accent">
+          <p><strong>MAYDAY, MAYDAY, MAYDAY:</strong></p>
+          <p><strong>WIE + WAT + WAAR:</strong></p>
+          <ul>
+            <li>Geef aan wie je bent, maak gebruik van je voertuigpositie (bijv. 111).</li>
+            <li>Geef de locatie door waar je je bevindt.</li>
+            <li>Geef aan wat de situatie is.</li>
+          </ul>
+          <p><strong>Geen reactie = herhalen MAYDAY.</strong></p>
+        </div>
+
+        <div class="document-text">
+          <h3>Noodoproep bevestigen / noodprocedure in gang zetten</h3>
+          <p>Bevestig dat de MAYDAY ontvangen is en herhaal het bericht:</p>
+          <ul>
+            <li>MAYDAY ontvangen, naam en locatie.</li>
+          </ul>
         </div>
 
         <div class="flow">
-          <div class="flow-step critical">
-            <span>1</span>
-            <div>
-              <h3>Denk je dat je in nood bent of dat een collega in nood is?</h3>
-              <p>Doe een noodoproep.</p>
-            </div>
-          </div>
+          <div class="flow-step critical"><span>1</span><div><h3>MAYDAY</h3><p>MAYDAY, MAYDAY, MAYDAY.</p></div></div>
           <div class="flow-arrow">↓</div>
-          <div class="flow-step">
-            <span>2</span>
-            <div>
-              <h3>MAYDAY MAYDAY MAYDAY</h3>
-              <p>Geef zo mogelijk door: <strong>wie – wat – waar</strong>.</p>
-            </div>
-          </div>
+          <div class="flow-step"><span>2</span><div><h3>WIE + WAT + WAAR</h3><p>Identiteit / voertuigpositie, locatie en situatie.</p></div></div>
           <div class="flow-arrow">↓</div>
-          <div class="flow-step">
-            <span>3</span>
-            <div>
-              <h3>Bevelvoerder bevestigt en start de procedure</h3>
-              <p>Via Spraakaanvraag Urgent of noodknop, met de alarmkreet MAYDAY MAYDAY MAYDAY.</p>
-            </div>
-          </div>
+          <div class="flow-step"><span>3</span><div><h3>Bevestigen</h3><p>MAYDAY ontvangen, naam en locatie.</p></div></div>
           <div class="flow-arrow">↓</div>
-          <div class="flow-step">
-            <span>4</span>
-            <div>
-              <h3>Beeld vormen en eerste reddingsactie</h3>
-              <p>De bevelvoerder blijft leidinggeven aan de eenheid, maakt een risico-analyse en start met prioriteit een eerste reddingspoging als de omstandigheden dit toelaten.</p>
-            </div>
-          </div>
+          <div class="flow-step"><span>4</span><div><h3>Procedure starten</h3><p>Bevelvoerder gebruikt urgente spraakaanvraag (9). Begin bericht altijd met MAYDAY, MAYDAY, MAYDAY.</p></div></div>
         </div>
 
         <div class="micro-note">
-          <strong>Spraakaanvraag Urgent heeft de voorkeur.</strong>
-          De noodknop blijft beschikbaar als laatste redmiddel wanneer spraakcommunicatie niet mogelijk of niet toereikend is.
+          <strong>Voorkeur:</strong> urgente spraakaanvraag. De noodknop is alternatief, maar heeft volgens de nieuwe ARO-kaart niet de voorkeur.
         </div>
 
         <div class="footer-actions">
-          <button class="secondary-btn prev-btn" data-prev="verschillen">Vorige</button>
-          <button class="primary-btn next-btn complete" data-complete="mayday" data-next="rollen">Afronden en verder</button>
+          <button class="secondary-btn prev-btn" data-prev="herkennen">Vorige</button>
+          <button class="primary-btn next-btn complete" data-complete="mayday" data-next="redding">Afronden en verder</button>
+        </div>
+      </section>
+
+      <section id="redding" class="page">
+        <div class="section-head">
+          <span class="section-number">07</span>
+          <div><div class="eyebrow">Nieuwe ARO-kaart</div><h2>Start reddingsactie</h2></div>
+        </div>
+
+        <div class="source-badge regional">Tekst uit nieuwe ARO-kaart</div>
+        <div class="document-text accent">
+          <p>Wanneer de bevelvoerder de MAYDAY ontvangt start hij/zij de noodprocedure op d.m.v. een urgente spraakaanvraag (9), daarmee worden overige eenheden en de meldkamer op de hoogte gebracht van de situatie.</p>
+          <ul>
+            <li>Begin het bericht altijd met MAYDAY, MAYDAY, MAYDAY. Door dit attentiesignaal weten alle betrokkenen dat het gaat om een bericht met een noodsituatie.</li>
+            <li>Alle functionarissen betrokken bij de redding schakelen over naar de gespreksgroep(en) van de persoon in nood. Maak wanneer mogelijk gebruik van andere gespreksgroepen voor eenheden die het incident afhandelen.</li>
+            <li>Alleen relevante communicatie via de gespreksgroep (RADIODISCIPLINE).</li>
+            <li>Andere teams in de buurt van de noodoproep kunnen (mits dit veilig kan) direct starten met de reddingsactie. Zij hoeven niet eerst terug naar het voertuig.</li>
+          </ul>
+        </div>
+
+        <div class="safe-grid">
+          <div class="safe-card"><strong>Direct handelen</strong><span>Manschappen die veilig kunnen helpen, mogen direct actie ondernemen.</span></div>
+          <div class="safe-card"><strong>Luister eerst</strong><span>Luister eerst naar de MAYDAY en onderneem daarna actie.</span></div>
+          <div class="safe-card"><strong>Communiceer daarna</strong><span>Stem de ondernomen actie af met de bevelvoerder.</span></div>
+          <div class="safe-card"><strong>Ademlucht</strong><span>Houd de ademluchtvoorraad van collega in nood en redders in de gaten.</span></div>
+          <div class="safe-card"><strong>Materieel</strong><span>Maak gebruik van een warmtebeeldcamera; neem zo nodig extra ademlucht mee.</span></div>
+          <div class="safe-card"><strong>Straal</strong><span>Reddingsploegen die naar binnen gaan, gebruiken in basis altijd een straal voor de veiligheid.</span></div>
+        </div>
+
+        <div class="footer-actions">
+          <button class="secondary-btn prev-btn" data-prev="mayday">Vorige</button>
+          <button class="primary-btn next-btn complete" data-complete="redding" data-next="rollen">Afronden en verder</button>
         </div>
       </section>
 
       <section id="rollen" class="page">
         <div class="section-head">
-          <span class="section-number">06</span>
-          <div>
-            <div class="eyebrow">Handelingsperspectieven</div>
-            <h2>Wat is jouw eerste handelingsperspectief?</h2>
-          </div>
+          <span class="section-number">08</span>
+          <div><div class="eyebrow">Nieuwe ARO-kaart</div><h2>Taken en verantwoordelijkheden</h2></div>
         </div>
 
         <div class="role-tabs">
-          <button class="role-tab active" data-role="manschap">Manschap</button>
-          <button class="role-tab" data-role="bevelvoerder">Bevelvoerder</button>
-          <button class="role-tab" data-role="ovd">Eerste OvD</button>
+          <button class="role-tab active" data-role="manschap">Manschappen</button>
+          <button class="role-tab" data-role="bevelvoerder">Betrokken bevelvoerder</button>
+          <button class="role-tab" data-role="ovd">Coördinatie</button>
+          <button class="role-tab" data-role="hinhon">HIN/HON</button>
         </div>
 
         <div class="role-panel active" id="role-manschap">
-          <h3>Manschap / betrokken eenheid</h3>
+          <div class="source-badge regional">Nieuwe ARO-kaart</div>
           <ul>
-            <li>Sla onmiddellijk alarm bij de bevelvoerder of hoogst leidinggevende.</li>
-            <li>Gebruik de alarmkreet <strong>MAYDAY MAYDAY MAYDAY</strong>.</li>
-            <li>Geef zo mogelijk door: naam/namen, noodsituatie of vermoeden daarvan en locatie.</li>
-            <li>Beoordeel of een eerste snelle reddingsactie soelaas kan bieden of dat de oorspronkelijke taak moet doorgaan om het incident te stabiliseren.</li>
-            <li>Communiceer alleen het hoognodige.</li>
+            <li>Voer indien dit veilig kan een reddingsactie uit onder leiding van de bevelvoerder.</li>
+            <li>Manschappen in de buurt die veilig kunnen helpen, kunnen/mogen direct actie ondernemen.</li>
+            <li>Houd rekening met snelle aflossing in verband met fysieke en mentale inspanning.</li>
+            <li>Houd de gespreksgroep zoveel mogelijk vrij: alleen noodzakelijke communicatie.</li>
           </ul>
         </div>
 
         <div class="role-panel" id="role-bevelvoerder">
-          <h3>Bevelvoerder betrokken eenheid</h3>
+          <div class="source-badge regional">Nieuwe ARO-kaart</div>
           <ul>
-            <li>Bevestig het noodsignaal bij de melder.</li>
-            <li>Breng wanneer nodig andere collega’s en uzelf in veiligheid.</li>
-            <li>Start de Noodprocedure Brand bij de meldkamer via Spraakaanvraag Urgent of noodknop en gebruik MAYDAY MAYDAY MAYDAY.</li>
-            <li>Informeer de meldkamer over aantal collega’s in nood, eventuele verwondingen, aard van de noodsituatie en locatie.</li>
-            <li>Blijf leidinggeven aan de eenheid.</li>
-            <li>Maak een risico-analyse; stabiliseer zo nodig eerst het oorspronkelijke incident.</li>
-            <li>Laat alleen terugtrekken als dit vanwege veiligheid noodzakelijk is.</li>
-            <li>Start met prioriteit een eerste reddingspoging als de omstandigheden dit toelaten.</li>
+            <li>Geeft een MAYDAY af naar de meldkamer.</li>
+            <li>Start bij ontvangst van de MAYDAY de noodprocedure via urgente spraakaanvraag (9).</li>
+            <li>Geeft leiding aan de eerste reddingsactie.</li>
+            <li>Tot komst van de OvD neemt de BV de coördinatie op zich. Bij BV in nood is dat de chauffeur/pompbediende.</li>
           </ul>
         </div>
 
         <div class="role-panel" id="role-ovd">
-          <h3>Eerste Officier van Dienst</h3>
+          <div class="source-badge regional">Nieuwe ARO-kaart</div>
           <ul>
-            <li>Blijft verantwoordelijk voor het incident.</li>
-            <li>Onderneemt actie om het incident te stabiliseren.</li>
-            <li>Is toegewijd aan de eerste reddingsactie(s) door de betrokken bevelvoerder.</li>
-            <li>Bereidt zich voor op het ondersteunen of leiden van opvolgende reddingsactie(s).</li>
-            <li>Zorgt dat aanrijdende eenheden efficiënt kunnen worden ingezet.</li>
-            <li>Beoordeelt of aanvullende eenheden of verdere opschaling nodig is.</li>
+            <li>BV neemt tot komst OvD de coördinatie op zich.</li>
+            <li>1e OvD: leiding over zoekactie / reddingsactie.</li>
+            <li>2e OvD: leiding over incidentbestrijding.</li>
+            <li>HOvD-TC: algemene leiding.</li>
+            <li>(H)OvD organiseert onder andere aflossing, begeleiding en nazorg van het getroffen team.</li>
+          </ul>
+        </div>
+
+        <div class="role-panel" id="role-hinhon">
+          <div class="source-badge regional">Nieuwe ARO-kaart</div>
+          <ul>
+            <li>Alarmeren van de AC-B of CvD.</li>
+            <li>Alarmeer communicatie/persvoorlichting.</li>
+            <li>Anticipeer op (razendsnelle) berichtgeving via sociale media.</li>
+            <li>Start coördinatie processen buiten de incidentbestrijding.</li>
           </ul>
         </div>
 
         <div class="footer-actions">
-          <button class="secondary-btn prev-btn" data-prev="mayday">Vorige</button>
-          <button class="primary-btn next-btn complete" data-complete="rollen" data-next="inzet">Afronden en verder</button>
+          <button class="secondary-btn prev-btn" data-prev="redding">Vorige</button>
+          <button class="primary-btn next-btn complete" data-complete="rollen" data-next="opschaling">Afronden en verder</button>
         </div>
       </section>
 
-      <section id="inzet" class="page">
+      <section id="opschaling" class="page">
         <div class="section-head">
-          <span class="section-number">07</span>
-          <div>
-            <div class="eyebrow">Standaard inzetvoorstel</div>
-            <h2>Wat komt er op gang?</h2>
-          </div>
+          <span class="section-number">09</span>
+          <div><div class="eyebrow">Nieuwe ARO-kaart</div><h2>Opschaling</h2></div>
         </div>
 
-        <p class="lead compact">
-          Met het standaard inzetvoorstel gaat een gestandaardiseerde groep eenheden met zo min mogelijk tijdverlies op weg naar de incidentlocatie.
-        </p>
+        <div class="source-badge regional">Regionale minimumrespons</div>
+        <div class="document-text accent">
+          <p><strong>Bij een gegeven ‘Noodprocedure brandweer’ komt bij incidenten en oefeningen minimaal extra ter plaatse.</strong></p>
+          <p>OvD/HOvD-TC schaalt, indien noodzakelijk, verder op met extra basiseenheden of specialismen.</p>
+        </div>
 
         <div class="response-grid">
-          <div class="response-card"><strong>TS 1</strong><span>Ondersteuning lopende reddingsactie of starten hiervan.</span></div>
-          <div class="response-card"><strong>TS 2</strong><span>Bijdragen aan stabilisatie van het oorspronkelijke incident.</span></div>
-          <div class="response-card"><strong>TS 3</strong><span>Garandeert extra manschappen ter plaatse.</span></div>
-          <div class="response-card"><strong>RV</strong><span>Tweede vluchtweg en bijdrage aan stabilisatie van het oorspronkelijke incident.</span></div>
-          <div class="response-card"><strong>OvD</strong><span>Toegewijd aan de reddingsoperatie.</span></div>
-          <div class="response-card"><strong>OvD-NO</strong><span>Leiding over het oorspronkelijke incident en ontvangst van aanrijdende eenheden.</span></div>
-          <div class="response-card"><strong>HOvD</strong><span>Multidisciplinaire afstemming en opstarten van nazorgprocessen.</span></div>
-          <div class="response-card"><strong>Coördinerend functionaris</strong><span>Coördinatie van regionale processen voor continuïteit en nazorg.</span></div>
-          <div class="response-card"><strong>Ambulance</strong><span>Start coördinatie van de gewondenopvang.</span></div>
+          <div class="response-card"><strong>3 × TS-6</strong><span>Minimaal extra bij Brand.</span></div>
+          <div class="response-card"><strong>1 × RV</strong><span>Nieuw standaard onderdeel bij Brand.</span></div>
+          <div class="response-card"><strong>2 × OvD-B</strong><span>Redding en incidentbestrijding kunnen gescheiden worden aangestuurd.</span></div>
+          <div class="response-card"><strong>1 × HOvD-TC</strong><span>Algemene leiding.</span></div>
+          <div class="response-card"><strong>1 × HIN/HON</strong><span>Coördinatie processen buiten incidentbestrijding.</span></div>
+          <div class="response-card"><strong>2 × AMBU</strong><span>Medische ondersteuning.</span></div>
         </div>
 
-        <div class="callout">
-          Het standaard inzetvoorstel is een <strong>landelijke gegarandeerde minimumrespons</strong>.
-          Regionale aanvullingen blijven mogelijk.
+        <div class="compare-mini">
+          <div>
+            <div class="tag oldtag">OUD</div>
+            <p><strong>Maximaal</strong> extra potentieel.</p>
+          </div>
+          <div class="arrow-change">→</div>
+          <div>
+            <div class="tag newtag">NIEUW</div>
+            <p><strong>Minimaal</strong> extra potentieel.</p>
+          </div>
         </div>
 
         <div class="footer-actions">
           <button class="secondary-btn prev-btn" data-prev="rollen">Vorige</button>
-          <button class="primary-btn next-btn complete" data-complete="inzet" data-next="check">Afronden en verder</button>
+          <button class="primary-btn next-btn complete" data-complete="opschaling" data-next="aro">Afronden en verder</button>
+        </div>
+      </section>
+
+      <section id="aro" class="page">
+        <div class="section-head">
+          <span class="section-number">10</span>
+          <div><div class="eyebrow">Naslag</div><h2>Nieuwe ARO-aandachtskaart</h2></div>
+        </div>
+
+        <div class="primary-source-card">
+          <h3>Dit is de kaart waarmee we gaan werken</h3>
+          <p>
+            De nieuwe voorlopige ARO-aandachtskaart is de regionale operationele vertaling van de nieuwe procedure.
+            Gebruik deze kaart als naslag voor de regionale werkwijze.
+          </p>
+          <a class="source-link" href="assets/ARO-Noodprocedure-Brandweer-concept-2026.pdf" target="_blank">Open nieuwe ARO-kaart</a>
+        </div>
+
+        <div class="aro-summary">
+          <div class="aro-block">
+            <h3>Pagina 1</h3>
+            <p>Herkennen, MAYDAY, WIE + WAT + WAAR, bevestigen van de noodoproep en starten van de reddingsactie.</p>
+          </div>
+          <div class="aro-block">
+            <h3>Pagina 2</h3>
+            <p>Veilig optreden, coördinatie, oefeningen en taken en verantwoordelijkheden.</p>
+          </div>
+          <div class="aro-block">
+            <h3>Pagina 3</h3>
+            <p>Opschaling, nazorg en rapportage.</p>
+          </div>
+        </div>
+
+        <details class="legacy-box">
+          <summary>Alleen ter vergelijking: oude ARO-kaart 2021</summary>
+          <p>De oude kaart is niet de werkwijze die in deze zelfstudie wordt aangeleerd. Hij is alleen beschikbaar om de veranderingen terug te kunnen zien.</p>
+          <a class="source-link secondary" href="assets/ARO-Noodprocedure-Brandweer-2021.pdf" target="_blank">Open oude ARO-kaart 2021</a>
+        </details>
+
+        <div class="footer-actions">
+          <button class="secondary-btn prev-btn" data-prev="opschaling">Vorige</button>
+          <button class="primary-btn next-btn complete" data-complete="aro" data-next="check">Afronden en verder</button>
         </div>
       </section>
 
       <section id="check" class="page">
         <div class="section-head">
-          <span class="section-number">08</span>
-          <div>
-            <div class="eyebrow">Kennischeck</div>
-            <h2>Controleer de kern</h2>
-          </div>
+          <span class="section-number">11</span>
+          <div><div class="eyebrow">Kennischeck</div><h2>Controleer de kern</h2></div>
         </div>
 
         <form id="quiz">
           <div class="question" data-answer="b">
-            <h3>1. Welke alarmkreet gebruikt de landelijke procedure?</h3>
+            <h3>1. Wat is de vaste noodoproep in de nieuwe werkwijze?</h3>
             <label><input type="radio" name="q1" value="a"> Noodprocedure Brandweer</label>
-            <label><input type="radio" name="q1" value="b"> MAYDAY MAYDAY MAYDAY</label>
+            <label><input type="radio" name="q1" value="b"> MAYDAY, MAYDAY, MAYDAY</label>
             <label><input type="radio" name="q1" value="c"> NO PLAY</label>
           </div>
 
           <div class="question" data-answer="c">
-            <h3>2. Welke informatie geef je bij een noodoproep zo mogelijk direct door?</h3>
-            <label><input type="radio" name="q2" value="a"> Alleen de locatie</label>
-            <label><input type="radio" name="q2" value="b"> Alleen de aard van de noodsituatie</label>
-            <label><input type="radio" name="q2" value="c"> Wie, wat, waar</label>
+            <h3>2. Welke informatie geef je bij de MAYDAY door?</h3>
+            <label><input type="radio" name="q2" value="a"> Alleen je locatie</label>
+            <label><input type="radio" name="q2" value="b"> Alleen de aard van het incident</label>
+            <label><input type="radio" name="q2" value="c"> WIE + WAT + WAAR</label>
           </div>
 
           <div class="question" data-answer="b">
-            <h3>3. Moet ander personeel bij een MAYDAY standaard terugtrekken?</h3>
+            <h3>3. Moeten teams in de buurt eerst terug naar het voertuig?</h3>
             <label><input type="radio" name="q3" value="a"> Ja, altijd</label>
-            <label><input type="radio" name="q3" value="b"> Alleen als dit vanwege veiligheid noodzakelijk is</label>
+            <label><input type="radio" name="q3" value="b"> Nee, zij kunnen mits veilig direct starten met de reddingsactie</label>
           </div>
 
           <div class="question" data-answer="a">
-            <h3>4. Wie start, als de omstandigheden dit toelaten, de eerste reddingsactie?</h3>
-            <label><input type="radio" name="q4" value="a"> De betrokken bevelvoerder</label>
-            <label><input type="radio" name="q4" value="b"> Pas de eerste OvD na aankomst</label>
+            <h3>4. Wie neemt tot komst van de OvD de coördinatie op zich?</h3>
+            <label><input type="radio" name="q4" value="a"> De bevelvoerder</label>
+            <label><input type="radio" name="q4" value="b"> HIN/HON</label>
+          </div>
+
+          <div class="question" data-answer="c">
+            <h3>5. Wat is nieuw in de opschaling bij Brand?</h3>
+            <label><input type="radio" name="q5" value="a"> Minder potentieel dan voorheen</label>
+            <label><input type="radio" name="q5" value="b"> Alleen een extra OvD</label>
+            <label><input type="radio" name="q5" value="c"> Minimaal 3 TS-6, RV, 2 OvD-B, HOvD-TC, HIN/HON en 2 ambulances</label>
           </div>
 
           <div class="question" data-answer="b">
-            <h3>5. Waarvoor blijft NO PLAY bedoeld?</h3>
-            <label><input type="radio" name="q5" value="a"> Als andere term voor MAYDAY tijdens oefeningen</label>
-            <label><input type="radio" name="q5" value="b"> Voor een echte noodsituatie tijdens een oefening</label>
+            <h3>6. Wat is de rol van de oude ARO-kaart in deze app?</h3>
+            <label><input type="radio" name="q6" value="a"> Die blijft naast de nieuwe kaart operationeel geldig</label>
+            <label><input type="radio" name="q6" value="b"> Alleen ter vergelijking; de nieuwe kaart is de werkwijze die wordt aangeleerd</label>
           </div>
 
           <button type="button" id="checkQuiz" class="primary-btn">Controleer antwoorden</button>
@@ -433,13 +545,13 @@
         <div class="finish-card">
           <h3>Vervolg in 2027</h3>
           <p>
-            In 2027 wordt deze procedure gekoppeld aan de praktijktraining Brandweerman in nood.
-            Doel: de procedure niet alleen kennen, maar ook kunnen toepassen onder tijdsdruk.
+            De theorie uit deze zelfstudie wordt in 2027 gekoppeld aan de praktijktraining Brandweerman in nood.
+            Dan draait het om herkennen, communiceren en handelen onder tijdsdruk.
           </p>
         </div>
 
         <div class="footer-actions">
-          <button class="secondary-btn prev-btn" data-prev="inzet">Vorige</button>
+          <button class="secondary-btn prev-btn" data-prev="aro">Vorige</button>
           <button class="primary-btn complete" data-complete="check">Zelfstudie afronden</button>
         </div>
       </section>
