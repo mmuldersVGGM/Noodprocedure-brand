@@ -59,3 +59,15 @@ document.getElementById('checkQuiz').addEventListener('click', () => {
   }
 });
 updateProgress();
+
+
+const qrModal = document.getElementById('qrModal');
+const openQr = document.getElementById('openQr');
+const closeQr = document.getElementById('closeQr');
+if(openQr && qrModal){
+  openQr.addEventListener('click',()=>{qrModal.classList.add('open');qrModal.setAttribute('aria-hidden','false');});
+}
+if(closeQr && qrModal){
+  closeQr.addEventListener('click',()=>{qrModal.classList.remove('open');qrModal.setAttribute('aria-hidden','true');});
+  qrModal.addEventListener('click',(e)=>{if(e.target===qrModal){qrModal.classList.remove('open');qrModal.setAttribute('aria-hidden','true');}});
+}

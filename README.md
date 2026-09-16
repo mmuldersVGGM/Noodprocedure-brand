@@ -1,4 +1,4 @@
-# Zelfstudie Noodprocedure Brandweer - versie 3.3
+# Zelfstudie Noodprocedure Brandweer - versie 3.5
 
 Deze versie is herschikt om verwarring te voorkomen.
 
@@ -34,10 +34,10 @@ Deze versie is herschikt om verwarring te voorkomen.
 
 
 ## Versie-aanduiding
-Versie 3.3 is nu zichtbaar in de bovenbalk, op het startscherm en onderaan de webapp.
+Versie 3.5 is nu zichtbaar in de bovenbalk, op het startscherm en onderaan de webapp.
 
 
-## Versie 3.3 verbeteringen
+## Versie 3.5 verbeteringen
 - vergelijking oud/nieuw gefixeerd zodat deze op desktop naast elkaar blijft staan;
 - linkkleur op donkere vlakken aangepast;
 - uitlijning van kaarten met kop en tekst verbeterd;
@@ -46,5 +46,26 @@ Versie 3.3 is nu zichtbaar in de bovenbalk, op het startscherm en onderaan de we
 - oude ARO-kaart nu direct klikbaar gemaakt.
 
 
-## Versie 3.3
+## Versie 3.5
 Opschaling is nu per incidenttype apart weergegeven: Brand, Duikinzet, Brandweervaartuig en IBGS, conform de nieuwe ARO-kaart.
+
+
+## Versie 3.5
+- QR-code toegevoegd voor: https://mmuldersvggm.github.io/noodprocedure-brand/
+- Mobiele layout verbeterd voor Android en iPhone/iPad.
+- Safe-area ondersteuning voor iPhones/iPads met notch.
+- Touchdoelen minimaal 44 px.
+- PWA-manifest en app-iconen toegevoegd.
+- iOS 'Add to Home Screen' ondersteuning toegevoegd.
+- Basale offline caching toegevoegd via service worker.
+- Mobiele navigatie, rolknoppen, footerknoppen en kaarten geoptimaliseerd.
+
+Let op: de QR-code wijst naar `https://mmuldersvggm.github.io/noodprocedure-brand/`. Als de definitieve GitHub Pages-URL anders is, moet de QR-code opnieuw gegenereerd worden.
+
+
+## Versie 3.5
+- Nieuw dramatisch voorblad toegevoegd met de door gebruiker gekozen afbeelding.
+- Videolink toegevoegd aan het voorblad: https://youtu.be/cwMH92jkYbE?si=Lnylt_NI9A3c9vRX
+- Auteur toegevoegd bij versienummer: Michel Mulders.
+- QR-code bijgewerkt naar de correcte live URL: https://mmuldersvggm.github.io/Noodprocedure-brand/
+- Voorblad responsief gemaakt voor desktop, Android, iPhone en iPad.

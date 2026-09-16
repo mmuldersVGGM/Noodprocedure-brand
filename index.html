@@ -2,7 +2,13 @@
 <html lang="nl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#151719" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Noodprocedure" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.json" />
   <title>Zelfstudie Noodprocedure Brandweer</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -12,7 +18,7 @@
       <div class="brandmark">NPB</div>
       <div>
         <div class="eyebrow">Zelfstudie 2026</div>
-        <div class="title-row"><h1>Noodprocedure Brandweer</h1><span class="version-badge">Versie 3.3</span></div>
+        <div class="title-row"><h1>Noodprocedure Brandweer</h1><span class="version-badge">Versie 3.5 · Michel Mulders</span></div>
       </div>
     </div>
     <button id="resetProgress" class="ghost-btn">Voortgang wissen</button>
@@ -47,33 +53,45 @@
     </aside>
 
     <main class="content">
+      
       <section id="start" class="page active">
-        <div class="hero">
-          <div class="hero-kicker">November / december 2026 · Webapp versie 3.3</div>
-          <h2>Nieuwe noodprocedure: dezelfde bedoeling, duidelijker handelen</h2>
-          <p class="lead">
-            In 2027 trainen we praktisch met Brandweerman in nood. Deze zelfstudie bereidt daarop voor.
-            De nadruk ligt op wat er voor onze ploegen en bevelvoerders verandert ten opzichte van de oude ARO-kaart.
-          </p>
+        <div class="cover-hero">
+          <img class="cover-image" src="assets/voorblad-noodprocedure-brandweer.png" alt="Voorblad Zelfstudie Noodprocedure Brandweer">
 
-          <div class="hero-grid">
-            <div class="metric"><strong>20–25 min</strong><span>zelfstudie</span></div>
-            <div class="metric"><strong>MAYDAY</strong><span>vaste noodoproep</span></div>
-            <div class="metric"><strong>2027</strong><span>praktijktraining</span></div>
+          <div class="cover-topline">
+            <span>Zelfstudie 2026</span>
+            <span class="cover-version">Versie 3.5 · Michel Mulders</span>
           </div>
 
-          <div class="start-message">
-            <strong>Belangrijk:</strong>
-            in deze app gebruiken we één lijn. De nieuwe ARO-kaart is de regionale werkwijze.
-            De oude kaart wordt alleen gebruikt om de veranderingen zichtbaar te maken.
+          <div class="cover-actions">
+            <a class="cover-btn video-btn" href="https://youtu.be/cwMH92jkYbE?si=Lnylt_NI9A3c9vRX" target="_blank" rel="noopener noreferrer">
+              Bekijk video
+            </a>
+            <a class="cover-btn secondary-cover-btn" href="assets/ARO-Noodprocedure-Brandweer-concept-2026.pdf" target="_blank">
+              Nieuwe ARO-kaart
+            </a>
+            <button class="cover-btn start-cover-btn next-btn" data-next="basis">Start zelfstudie</button>
           </div>
 
-          <div class="source-buttons">
-            <a class="source-link light" href="assets/ARO-Noodprocedure-Brandweer-concept-2026.pdf" target="_blank">Open nieuwe ARO-kaart</a>
-            <a class="source-link light" href="assets/Landelijke-Noodprocedure-Brand-2026.pdf" target="_blank">Open landelijke onderlegger</a>
+          <div class="cover-mobile-note">
+            <span>Geschikt voor desktop, Android, iPhone en iPad</span>
           </div>
+        </div>
 
-          <button class="primary-btn next-btn" data-next="basis">Start zelfstudie</button>
+        <div class="mobile-quicklinks">
+          <a href="https://youtu.be/cwMH92jkYbE?si=Lnylt_NI9A3c9vRX" target="_blank" rel="noopener noreferrer">Bekijk video</a>
+          <a href="assets/ARO-Noodprocedure-Brandweer-concept-2026.pdf" target="_blank">Open ARO-kaart</a>
+          <a href="assets/Landelijke-Noodprocedure-Brand-2026.pdf" target="_blank">Landelijke onderlegger</a>
+        </div>
+
+        <div class="qr-card compact-qr">
+          <div class="qr-copy">
+            <div class="hero-kicker">Open op telefoon of tablet</div>
+            <h3>Scan de QR-code</h3>
+            <p>De QR-code opent de live webapp.</p>
+            <div class="qr-url">https://mmuldersvggm.github.io/Noodprocedure-brand/</div>
+          </div>
+          <img src="assets/qr-noodprocedure-brand.png" alt="QR-code naar de Noodprocedure Brandweer webapp" />
         </div>
       </section>
 
@@ -554,6 +572,24 @@
           <a class="source-link" href="assets/ARO-Noodprocedure-Brandweer-concept-2026.pdf" target="_blank">Open nieuwe ARO-kaart</a>
         </div>
 
+        
+        <div class="share-strip">
+          <div>
+            <strong>Webapp delen</strong>
+            <span>Scan de QR-code of open de link op een mobiel apparaat.</span>
+          </div>
+          <button class="secondary-btn" id="openQr">Toon QR-code</button>
+        </div>
+
+        <div class="qr-modal" id="qrModal" aria-hidden="true">
+          <div class="qr-modal-box">
+            <button class="qr-close" id="closeQr" aria-label="Sluiten">×</button>
+            <h3>Noodprocedure Brandweer</h3>
+            <img src="assets/qr-noodprocedure-brand.png" alt="QR-code naar de webapp" />
+            <p>Scan met de camera van je telefoon of tablet.</p>
+          </div>
+        </div>
+
         <div class="aro-summary">
           <div class="aro-block">
             <h3>Pagina 1</h3>
@@ -647,8 +683,9 @@
     </main>
   </div>
 
-  <footer class="app-footer">Noodprocedure Brandweer · Zelfstudie 2026 · Webapp versie 3.3</footer>
+  <footer class="app-footer">Noodprocedure Brandweer · Zelfstudie 2026 · Webapp versie 3.5</footer>
 
   <script src="app.js"></script>
+  <script>if("serviceWorker" in navigator){window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));}</script>
 </body>
 </html>
