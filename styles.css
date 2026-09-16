@@ -904,3 +904,36 @@ input[type="radio"]{
     margin:0 auto;
   }
 }
+
+
+/* ---- versie 3.7: uitlijning voorblad-afbeelding herstellen ---- */
+.cover-shell{
+  max-width:100%;
+}
+.cover-frame{
+  aspect-ratio:auto !important;
+  height:auto !important;
+  overflow:visible !important;
+  display:block !important;
+}
+.cover-frame .cover-image,
+.cover-image{
+  width:100% !important;
+  height:auto !important;
+  min-height:0 !important;
+  max-height:none !important;
+  object-fit:unset !important;
+  object-position:center center !important;
+  display:block !important;
+  margin:0 auto !important;
+}
+@media(max-width:900px){
+  .cover-frame{
+    aspect-ratio:auto !important;
+  }
+}
+@media(max-width:560px){
+  .cover-frame{
+    aspect-ratio:auto !important;
+  }
+}
